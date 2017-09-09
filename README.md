@@ -1,2 +1,3 @@
 # more-lang
-A multilingual support plugin for Wordpress
+A multilingual support plugin for Wordpress. It's powerful, clean & easy to use.
+Not available yet, coming soon...
