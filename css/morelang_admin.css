@@ -1,0 +1,502 @@
+#ml-opt-wrap {
+	width: 96%;
+	padding: 8px;
+	position: relative;
+	background: #eeeeee;
+	margin-top: 6px;
+	border: 1px solid lightgray;
+	border-bottom-color: gray;
+	border-radius: 10px 10px 0px 0px;
+}
+#ml-opt-wrap input[type="radio"], #ml-opt-wrap input[type="checkbox"] {
+	margin-right: 0px;
+	margin-top: auto;
+}
+#ml-opt-wrap input[type="radio"]:not(:first-of-type) {
+	margin-left: 8px;
+}
+#ml-opt-wrap input.ml-grid-input {
+	max-width: 88px;
+	width: 100%;
+}
+#ml-opt-wrap fieldset {
+	position: relative;
+	border: 1px solid SteelBlue;
+	padding: 8px 3px;
+	border-radius: 5px;
+	background-color: #e8e8e8;
+}
+#ml-opt-wrap fieldset legend {
+	color: SteelBlue;
+}
+#ml-opt-wrap .ml-inner-comment {
+	color: gray;
+}
+#ml-opt-wrap input:checked + .ml-inner-comment,
+#ml-opt-wrap input:checked + label .ml-inner-comment {
+	color: dimgray;
+}
+
+#ml-langcfg-tbl {
+	border: 1px solid gray;
+	padding: 3px;
+	border-spacing: 0px;
+	width: 100%;
+}
+
+#ml-langcfg-tbl tr td, #ml-langcfg-tbl tr th {
+	text-align: left;
+}
+#ml-langcfg-tbl tr th {
+	padding-left: 5px;
+}
+#ml-langcfg-tbl tbody tr td:last-child, #ml-langcfg-tbl tr th:last-child {
+	text-align: center;
+	padding: 3px;
+	white-space: nowrap;
+}
+#ml-langcfg-tbl tbody tr:not(:first-child):hover {
+	background-color: lightgray;
+}
+
+#ml-langcfg-tbl tbody tr:first-child td {
+	border-style: solid;
+	border-color: blue;
+	border-width: 1px 0px;
+}
+
+#ml-langcfg-tbl tbody tr:first-child td:first-child {
+	border-left-width: 1px;
+}
+#ml-langcfg-tbl tbody tr:first-child td:last-child {
+	border-right-width: 1px;
+	text-align: left;
+}
+
+#ml-langcfg-tbl tbody tr td button {
+	cursor: pointer;
+}
+#ml-langcfg-tbl tbody tr:first-child button {
+	display: none;
+}
+/* #ml-langcfg-tbl tbody tr:nth-child(2) .ml-up-lang { visibility:hidden; } */
+#ml-langcfg-tbl tbody tr .ml-del-lang {
+	margin-left: 5px;
+}
+
+#ml-langcfg-tbl tfoot td {
+	text-align: left;
+	border-top: 1px solid gray;
+}
+#ml-langcfg-tbl thead th:last-child {
+	color: darkred;
+}
+#ml-langcfg-tbl tbody td:last-child {
+	background-color: lightgray;
+}
+
+#ml-langcfg-tbl .ml-moreopt-wrap {
+	position: relative;
+}
+#ml-langcfg-tbl .ml-moreopt-wrap .ml-moreopt-spacer {
+	display: none;
+	position: absolute;
+	top: -3px;
+	right: 90%;
+	padding-right: 18%;
+}
+#ml-langcfg-tbl .ml-moreopt-wrap .ml-moreopt-grp {
+	position: relative;
+	padding: 8px;
+	white-space: nowrap;
+	background-color: #d8d8d8;
+	border: 2px solid gray;
+	z-index: 101;
+}
+#ml-langcfg-tbl .ml-moreopt-wrap .ml-moreopt-grp:before {
+	content: "";
+	display: block;
+	position: absolute;
+	right: -21px;
+	top: 3px;
+	width: 0px;
+	height: 0px;
+	border-width: 8px 10px;
+	border-style: solid;
+	border-color: transparent transparent transparent gray;
+}
+#ml-langcfg-tbl .ml-moreopt-wrap .ml-moreopt-grp:after {
+	content: "";
+	display: block;
+	position: absolute;
+	right: -16px;
+	top: 5px;
+	width: 0px;
+	height: 0px;
+	border-width: 6px 8px;
+	border-style: solid;
+	border-color: transparent transparent transparent #d8d8d8;
+}
+#ml-langcfg-tbl .ml-moreopt-wrap .ml-moreopt-ind {
+	color: darkblue;
+	border-bottom: 1px dotted blue;
+	cursor: pointer;
+}
+#ml-langcfg-tbl .ml-moreopt-wrap:hover .ml-moreopt-ind {
+	color: red;
+}
+#ml-langcfg-tbl .ml-moreopt-wrap .ml-moreopt-ind span:last-child {
+	display: none;
+}
+#ml-langcfg-tbl .ml-moreopt-wrap.ml-moreopt-show .ml-moreopt-ind span:last-child {
+	display: inline;
+}
+#ml-langcfg-tbl .ml-moreopt-wrap.ml-moreopt-show .ml-moreopt-ind span:first-child {
+	display: none;
+}
+#ml-langcfg-tbl .ml-moreopt-wrap:hover .ml-moreopt-spacer,
+#ml-langcfg-tbl .ml-moreopt-wrap.ml-moreopt-show .ml-moreopt-spacer {
+	display: block;
+	color: black;
+}
+#ml-langcfg-tbl .ml-moreopt-wrap .ml-moreopt-topbar {
+	background-color: gray;
+}
+
+#ml-auto-chooser:checked + label {
+	color: darkred;
+}
+#ml-short-label:checked + label {
+	color: darkred;
+}
+
+#ml-url-locale-result-example {
+	padding-left: 1.8em;
+}
+#ml-url-locale-result {
+	color: darkred;
+}
+#ml-url-locale-lower-case:checked ~ #ml-url-locale-result-example #ml-url-locale-result {
+	text-transform: lowercase;
+}
+#ml-url-locale-to-hyphen ~ #ml-url-locale-result-example #ml-url-locale-result .ml-country-part .ml-underscore,
+#ml-url-locale-to-hyphen:checked ~ #ml-url-locale-result-example #ml-url-locale-result .ml-country-part .ml-hyphen {
+	display: inline;
+}
+#ml-url-locale-to-hyphen:checked ~ #ml-url-locale-result-example #ml-url-locale-result .ml-country-part .ml-underscore,
+#ml-url-locale-to-hyphen ~ #ml-url-locale-result-example #ml-url-locale-result .ml-country-part .ml-hyphen {
+	display: none;
+}
+#ml-url-locale-no-country:checked ~ #ml-url-locale-result-example #ml-url-locale-result .ml-country-part {
+	display: none;
+}
+
+.ml-radio-grp {
+	display: inline-block;
+	padding: 1px;
+	margin-top: 3px;
+	margin-left: 6px;
+	border: 1px dotted gray;
+}
+.ml-radio-grp input:checked + label {
+	color: darkred;
+}
+.ml-opt-gap {
+	margin-top: 9px;
+	margin-bottom: 9px;
+}
+#ml-pos-input-grp {
+	display: none;
+}
+#ml-pos-input-grp :input {
+	line-height: 26px;
+	height: 26px;
+}
+#ml-auto-chooser:checked ~ #ml-pos-input-grp {
+	display: inline;
+}
+
+#ml-locale-panel {
+	display: inline-block;
+}
+#ml-locale-panel label {
+	cursor: text;
+}
+#ml-add-locale, #ml-create-locale {
+	vertical-align: middle;
+}
+#ml-locale-sel {
+	width: 18%;
+	min-width: 236px;
+}
+#ml-locale-sel option div {
+	/* If we make 'option' or 'select' positioned instead, the 'img' position doesn't work as expected */
+	position: relative;
+	width: 100%;
+}
+#ml-locale-sel option img {
+	position: absolute;
+	right: 5px;
+}
+#ml-langcfg-form {
+	margin-top: 10px;;
+	border-top: 1px dotted gray;
+}
+#ml-langcfg-form p {
+	text-align: center;
+	margin-top: 6px;
+}
+p.submit {
+	padding-bottom: 3px;
+}
+
+.ml-switch-editor.ml-active-lang {
+	background: #f5f5f5;
+	color: #555;
+	border: 1px solid #C0C0C0;
+	border-bottom-color: #f5f5f5;
+}
+
+.ml-editor-tabs {
+	margin-right: 61px;
+	float: right;
+}
+
+/* to fix older WPs issue */
+#wp-content-editor-tools #wp-content-media-buttons {
+	float: left;
+}
+
+.ml-excerpt-label {
+	color: darkred;
+	font-size: 0.9em;
+}
+
+
+.ml-title-prompt-text {
+	color: #72777c;
+	position: absolute;
+	font-size: 1.7em;
+	padding: 11px 10px;
+}
+.ml-title-input {
+	padding: 3px 8px;
+	font-size: 1.7em;
+	line-height: 100%;
+	height: 1.7em;
+	width: 100%;
+	outline: none;
+	margin: 0 0 3px;
+	background-color: #fff;
+}
+#title-tabs .ui-tabs-nav a:focus {
+	box-shadow: none;
+}
+
+.ml-ui-tabs {
+	position: relative;/* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+	padding: .1em;
+	border: 1px solid lightgray;
+	border-top-width: 0px;
+}
+
+/* The following are copied from '.ui-helper-clearfix' in jquery-ui-dialog.css, which may not be enqueued */
+.ml-ui-tabs .ui-tabs-nav:before,
+.ml-ui-tabs .ui-tabs-nav:after {
+	content: "";
+	display: table;
+	border-collapse: collapse;
+}
+.ml-ui-tabs .ui-tabs-nav:after {
+	clear: both;
+}
+
+.ml-ui-tabs .ui-tabs-nav {
+	margin: 0;
+	padding: 0em 0.8em;
+}
+.ml-ui-tabs .ui-tabs-nav li {
+	list-style: none;
+	float: left;
+	position: relative;
+	top: 1px;
+	margin: 1px .2em 0 0;
+	border: 1px solid lightgray;
+	border-bottom-width: 0;
+	padding: 0;
+	white-space: nowrap;
+}
+.ml-ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+	float: left;
+	padding: .5em 1em;
+	text-decoration: none;
+}
+.ml-ui-tabs .ui-tabs-nav li.ui-tabs-active {
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	background-color: white;
+	border-color:rgba(30, 140, 190, 0.8);
+}
+form[action="options.php"] .ml-ui-tabs .ui-tabs-nav li.ui-tabs-active,
+.term-name-wrap .ml-ui-tabs .ui-tabs-nav li.ui-tabs-active,
+form#edittag .ml-ui-tabs .ui-tabs-nav li.ui-tabs-active {
+	margin-bottom: -1px;
+	padding-bottom: 1px;
+}
+.ml-ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor,
+.ml-ui-tabs .ui-tabs-nav li.ui-state-disabled .ui-tabs-anchor,
+.ml-ui-tabs .ui-tabs-nav li.ui-tabs-loading .ui-tabs-anchor {
+	cursor: text;
+}
+.ml-tab-empty:after {
+	content: "";
+	position: absolute;
+	width: 33%;
+	height: 1px;
+	left: 33%;
+	bottom: 0px;
+	background-color: darkred;
+}
+.ml-ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor {
+	cursor: pointer;
+}
+.ml-ui-tabs .ui-tabs-panel {
+	display: block;
+	border-width: 0;
+	padding: 0em 0.5em;
+	background: none;
+}
+.ml-ui-tabs .ui-widget-header {
+	background: none;
+	border: none;
+}
+
+.ml-ui-tabs.ml-ui-tabs-nop {
+	margin: 2px 1px 3px 1px;
+}
+.ml-ui-tabs.ml-ui-tabs-nop .ui-tabs-nav {
+	margin: 0;
+	padding: 0em 0.8em;
+}
+.ml-ui-tabs.ml-ui-tabs-nop .ui-tabs-nav .ui-tabs-anchor {
+	padding: 0.08em 0.18em;
+	font-size: 0.9em;
+}
+.term-name-wrap .ml-ui-tabs {
+	width: 95%;
+}
+.term-name-wrap .ml-ui-tabs input {
+	width: 100%;
+}
+form[action="options.php"] .ml-ui-tabs {
+	width: 26em;
+}
+
+#excerpt-tabs.ml-ui-tabs {
+	border-width: 0px;
+}
+#excerpt-tabs .ui-tabs-nav a:focus {
+	box-shadow: none;
+}
+#excerpt-tabs textarea {
+	margin-top: 0px;
+}
+
+#adminmenu #toplevel_page_morelang-inc-ml_cfg .wp-menu-image:before {
+	color: CadetBlue;
+}
+
+
+.ml-tooltip {
+	position: relative;
+	display: inline-block;
+	margin-left: 9px;
+	height: 16px;
+	line-height: 16px;
+	vertical-align: middle;
+}
+.ml-tooltip-mark {
+	display: block;
+	border: 1px solid #999;
+	color: darkblue;
+	border-radius: 50%;
+	font-size: 13px;
+	width: 13px;
+	height: 13px;
+	font-weight: normal;
+	font-family: "caption", Arial;
+	text-align: center;
+}
+.ml-tooltip-content-wrap {
+	z-index: 999999;
+	display: none;
+	position: absolute;
+	left: -6px;
+	bottom: 13px;
+	width: 80px;
+	max-width: 500px;
+	height: 16px;
+}
+.ml-tooltip-content {
+	position: absolute;
+	bottom: 13px;
+	left: 0px;
+	display: block;
+	width: auto;
+	width: 200px;
+	padding: 8px;
+	font-weight: normal;
+	line-height: 1.1em;
+	border: 1px solid #ccc;
+	background: #fff;
+	color: #333;
+	font-size: 13px;
+}
+.ml-tooltip-content:before {
+	content: "";
+	position: absolute;
+	left: 7px;
+	bottom: -22px;
+	border-style: solid solid solid solid;
+	border-color: #ccc transparent transparent transparent;
+	border-width: 11px 6px;
+}
+.ml-tooltip-content:after {
+	content: "";
+	position: absolute;
+	left: 8px;
+	bottom: -18px;
+	border-style: solid solid solid solid;
+	border-color: #fff transparent transparent transparent;
+	border-width: 9px 5px;
+}
+.ml-tooltip-content em {
+	font-style: normal;
+	color: darkred;
+}
+.ml-tooltip:hover > .ml-tooltip-content-wrap {
+	display: block;
+}
+
+
+#select2-ml-locale-sel-results li span img {
+	float: right;
+}
+#select2-ml-locale-sel-container {
+	width: 80%;
+	min-width: 196px;
+}
+.select2-container .select2-selection--single #select2-ml-locale-sel-container.select2-selection__rendered {
+	white-space: normal; /* Override Select2 to avoid the float issue */
+}
+#select2-ml-locale-sel-container img {
+	float: right;
+	margin-top: 8px;
+}
+.ml-flag-container {
+	width: 7.6em !important;
+}
+.ml-flag-container img, .ml-flag-dropdown img {
+	max-width: 18px;
+	max-height: 13px;
+}

@@ -3,13 +3,15 @@ namespace morelang;
 
 /**
  * Plugin Name: More-Lang
- * Plugin URI: https://wordpress.org/plugins/more-lang
- * Description: Multilingual support
- * Version: 0.9.9
+ * Plugin URI: https://wordpress.org/plugins/more-lang/
+ * Description: A multilingual support plugin for Wordpress. With clean design and simple UI, it is very easy to use.
+ * Version: 1.0.0
  * Author: Clive Zheng
  * Author URI: https://github.com/clivezhg
- * License:
+ * License: GPLv2 or later
  */
+define('ML_VER', '1.0.0');
+
 defined('ABSPATH') or die("No script kiddies please!");
 
 define('ML_URLMODE_PATH', '0');
@@ -29,6 +31,7 @@ if ( ! is_admin() ) {
 	if ( ! ml_get_locale() ) {
 		return; // skip the default locale
 	}
+
 	require_once 'inc/ml_text.php';
 	include_once 'ext/ml_ext_text.php';
 }
@@ -56,7 +59,8 @@ function ml_admin_actions() {
 	require_once 'inc/ml_cfg.php';
 
 	register_deactivation_hook(__FILE__, 'morelang\morelang_deactivation');
-	function morelang_deactivation(){}
+	function morelang_deactivation() {
+	}
 
 	require_once 'inc/ml_editor.php';
 
@@ -64,22 +68,20 @@ function ml_admin_actions() {
 	function morelang_scripts() {
 		$cur_plugin_url = plugin_dir_url( __FILE__ );
 
-		wp_enqueue_style( 'morelang_style', $cur_plugin_url . 'css/morelang_admin.css', array(), '1.0' );
+		wp_enqueue_style( 'morelang_style', $cur_plugin_url . 'css/morelang_admin.css', array(), ML_VER );
 
 		wp_enqueue_script( 'jquery-ui-tabs' );
 
 		if (file_exists(plugin_dir_path(__FILE__) . 'jsmin/morelang.min.js')) {
-			wp_enqueue_script( 'morelang_js_min', $cur_plugin_url . 'jsmin/morelang.min.js', array(), '1.0', true );
-			return;
+			wp_enqueue_script( 'morelang_js_min', $cur_plugin_url . 'jsmin/morelang.min.js', array(), ML_VER, true );
 		}
-		wp_enqueue_script( 'morelang_js', $cur_plugin_url . 'js/morelang.js', array(), '1.0', true );
-		if (file_exists(plugin_dir_path(__FILE__) . 'js/morelang_cfg.js')) {
-			wp_enqueue_script( 'morelang_js_cfg', $cur_plugin_url . 'js/morelang_cfg.js', array(), '1.0', true );
-		}
-		if (file_exists(plugin_dir_path(__FILE__) . 'js/morelang_repos.js')) {
-			wp_enqueue_script( 'morelang_js_repos', $cur_plugin_url . 'js/morelang_repos.js', array(), '1.0', true );
+		else {
+			wp_enqueue_script( 'morelang_js', $cur_plugin_url . 'js/morelang.js', array(), ML_VER, true );
+			wp_enqueue_script( 'morelang_js_cfg', $cur_plugin_url . 'js/morelang_cfg.js', array(), ML_VER, true );
+			wp_enqueue_script( 'morelang_js_repos', $cur_plugin_url . 'js/morelang_repos.js', array(), ML_VER, true );
 		}
 	}
+
 
 	include_once 'ext/ml_ext.php';
 }
