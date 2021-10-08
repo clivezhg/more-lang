@@ -16,6 +16,11 @@ function ml_created_term($term_id, $tt_id, $taxonomy) {
 }
 function ml_save_term_fld_vals($term_id, $taxonomy, $name_prefix, $fld='name') {
 	global $ml_registered_mlocales;
+	$tax_obj = get_taxonomy( $taxonomy );
+	$edit_cap = 'manage_categories';
+	if ( isset($tax_obj->cap->edit_terms) ) $edit_cap = $tax_obj->cap->edit_terms;
+	if (! current_user_can( $edit_cap )) return;
+
 	$term_fld_vals = array();
 	$has_ml_value = FALSE;
 	foreach ( $ml_registered_mlocales as $mlocale ) {

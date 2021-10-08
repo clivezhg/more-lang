@@ -104,6 +104,8 @@ function ml_added_post_meta( $mid, $object_id, $meta_key, $_meta_value ) {
 		else return;
 	}
 
+	if (! current_user_can( 'edit_post', (int)$object_id )) return;
+
 	$meta_key = wp_slash( $meta_key );
 	global $ml_registered_mlocales;
 	foreach ( $ml_registered_mlocales as $mlocale ) {
@@ -170,6 +172,8 @@ function ml_update_meta() {
 add_action( 'deleted_post_meta', 'morelang\ml_deleted_post_meta', 10, 4 );
 function ml_deleted_post_meta( $meta_id, $object_id, $meta_key, $meta_value ) {
 	if ( ml_skip_meta( $meta_key ) ) return;
+	if (! current_user_can( 'edit_post', (int)$object_id )) return;
+
 	global $ml_registered_mlocales;
 	$meta_key = wp_slash( $meta_key );
 	foreach ( $ml_registered_mlocales as $mlocale ) {
@@ -186,6 +190,8 @@ function ml_update_post_meta( $meta_id, $object_id, $meta_key, $_meta_value ) {
 	global $ml_registered_mlocales;
 	if ( ml_skip_meta( $meta_key ) ) return;
 	if ( strlen($meta_key) > ML_MAX_METALEN ) return;
+	if (! current_user_can( 'edit_post', (int)$object_id )) return;
+
 	foreach ( $ml_registered_mlocales as $mlocale ) {
 		$meta_arr = 'morelang_' . $mlocale . '_meta';
 		if ( isset( $_POST[$meta_arr][$meta_id] ) ) {

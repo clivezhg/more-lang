@@ -120,7 +120,7 @@ All the More-Lang related data have "morelang_nml_" in their keys or names, whic
 
 == Changelog ==
 
-= 2.5.9 (2021-10-06) =
+= 2.5.9 (2021-10-08) =
 
 * Some trivial changes.
 

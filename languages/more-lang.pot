@@ -1,14 +1,14 @@
-# Copyright (C) 2020 More-Lang
+# Copyright (C) 2021 More-Lang
 # This file is distributed under the same license as the More-Lang package.
 msgid ""
 msgstr ""
-"Project-Id-Version: More-Lang 2.5.0\n"
+"Project-Id-Version: More-Lang 2.5.9\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/more-lang\n"
-"POT-Creation-Date: 2020-10-31 03:00:00+00:00\n"
+"POT-Creation-Date: 2021-10-16 00:00:00+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2020-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2021-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 
@@ -20,23 +20,23 @@ msgstr ""
 msgid "The \"Name\" should have less than %d characters"
 msgstr ""
 
-#: ext/ml_custom.php:123
+#: ext/ml_custom.php:125
 msgid "The default meta is missing"
 msgstr ""
 
-#: ext/ml_custom.php:153
+#: ext/ml_custom.php:155
 msgid "Failure"
 msgstr ""
 
-#: ext/ml_custom.php:156
+#: ext/ml_custom.php:158
 msgid "Invalid Parameters"
 msgstr ""
 
-#: ext/ml_ext.php:132
+#: ext/ml_ext.php:135
 msgid "More-Lang Translations"
 msgstr ""
 
-#: ext/ml_ext.php:132 more-lang.php:57
+#: ext/ml_ext.php:135 more-lang.php:57
 msgid "Translations"
 msgstr ""
 
@@ -140,15 +140,15 @@ msgstr ""
 msgid "Thanks a lot in advance!"
 msgstr ""
 
-#: inc/ml_editor.php:111 inc/ml_widget.php:71
+#: inc/ml_editor.php:113 inc/ml_widget.php:71
 msgid "Title"
 msgstr ""
 
-#: inc/ml_editor.php:111
+#: inc/ml_editor.php:113 inc/ml_widget.php:121 inc/ml_widget.php:163
 msgid "Content"
 msgstr ""
 
-#: inc/ml_editor.php:111
+#: inc/ml_editor.php:113
 msgid "Excerpt"
 msgstr ""
 

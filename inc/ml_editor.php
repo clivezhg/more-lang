@@ -50,6 +50,8 @@ function ml_save_post($post_ID, $post, $update = TRUE) {
 
 	if ( ! is_int( $post_ID ) ) return;
 
+	if (! current_user_can('edit_post', $post_ID)) return;
+
 	if ( ! empty($_POST['data']['wp_autosave']) ) {
 		return;
 	}
@@ -152,6 +154,8 @@ function ml_put_post_revision( $revision_id ) {
 	$r_post = get_post($revision_id);
 	if ( ! is_int($r_post->post_parent) ) return;
 	$pid = $r_post->post_parent;
+	if (! current_user_can('edit_post', $pid)) return;
+
 	foreach ( $ml_revision_flds as $fld ) {
 		foreach ( $ml_registered_mlocales as $mlocale ) {
 			$ml_meta_name = ml_postmeta_name($fld, $mlocale);
@@ -169,6 +173,8 @@ add_action('wp_restore_post_revision', 'morelang\ml_restore_post_revision', 10, 
 function ml_restore_post_revision( $post_id, $revision_id ) {
 	global $ml_registered_mlocales, $ml_revision_flds;
 	if ( ! is_int($post_id) || ! is_int($revision_id) ) return;
+	if (! current_user_can('edit_post', $post_id)) return;
+
 	foreach ( $ml_revision_flds as $fld ) {
 		foreach ( $ml_registered_mlocales as $mlocale ) {
 			$ml_meta_name = ml_postmeta_name($fld, $mlocale);

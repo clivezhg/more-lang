@@ -37,6 +37,9 @@ function ml_save_post_autosave( $ID, $post, $update = TRUE ) {
 	global $ml_registered_mlocales;
 
 	if ( ! is_int( $ID ) ) return;
+	
+	if (! current_user_can('edit_post', $ID)) return;
+
 	$autosave_data = NULL;
 	if ( ! empty($_POST['data']['wp_autosave']) ) {
 		$autosave_data = $_POST['data']['wp_autosave'];

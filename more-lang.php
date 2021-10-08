@@ -79,7 +79,7 @@ else {
 }
 
 function ml_admin_actions() {
-	if ( ! current_user_can('edit_posts') ) {
+	if (! current_user_can('edit_posts') && ! current_user_can('edit_theme_options') && ! current_user_can('manage_categories')) {
 		// the 'current_user_can(...)' is not runnable before "pluggable.php" is loaded (so put it in 'plugins_loaded')
 		return;
 	}

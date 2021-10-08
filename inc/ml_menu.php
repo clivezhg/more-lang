@@ -95,6 +95,8 @@ class ML_Custom_Menu {
 	
 	function ml_update_nav_menu_item( $menu_id, $menu_item_db_id, $args ) {
 		global $ml_registered_mlocales;
+		if (! current_user_can( 'edit_theme_options' )) return;
+
 		foreach ( $ml_registered_mlocales as $mlocale ) {
 			if ( isset( $_POST['menu-item-title_' . $mlocale] ) ) {
 				$m_titles = $_POST['menu-item-title_' . $mlocale];
