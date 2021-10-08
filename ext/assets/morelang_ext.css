@@ -1,0 +1,125 @@
+#postcustomstuff table textarea.morelang-meta-locale {
+	margin: 0px;
+	width: 100%;
+}
+
+/* The "Language" columns on the Posts lists */
+.fixed .column-ml_lang_col {
+	width: 9%;
+	font-style: italic;
+}
+.fixed .column-ml_lang_col img {
+	margin-right: 3px;
+}
+.fixed .column-ml_lang_col img.ml-col-flag-disabled {
+	opacity: 0.19;
+	filter: alpha(opacity=19); /* msie */
+}
+
+
+/* The translating of any text */
+div#ml-trans-wrap {
+	margin-bottom: 19px;
+}
+div#ml-trans-wrap * {
+	box-sizing: border-box;
+}
+#ml-trans-wrap #ml-trans-heading {
+	border-bottom: 3px double lightgray;
+}
+#ml-trans-tbl {
+	width: 99%;
+	border-spacing: 0px;
+}
+#ml-trans-tbl td {
+	width: 50%;
+}
+#ml-trans-tbl td input:not([type="checkbox"]), #ml-trans-tbl td textarea {
+	width: 100%;
+}
+#ml-trans-tbl td textarea {
+	height: 3.96em;
+}
+#ml-trans-tbl thead th {
+	border-bottom: 1px solid gray;
+	border-left-width: 0px;
+	border-right-width: 0px;
+}
+#ml-trans-tbl tfoot td {
+	border-top: 1px solid gray;
+	text-align: right;
+}
+#ml-trans-tbl td {
+	vertical-align: bottom;
+	padding-left: 2px;
+	padding-right: 3px;
+}
+#ml-trans-tbl tbody td:last-child input {
+	position: relative;
+	bottom: 5px;
+}
+#ml-trans-tbl .ml-ui-tabs {
+	border-width: 0px;
+}
+#ml-trans-tbl .ml-ui-tabs .ui-tabs-panel {
+	padding: 0px;
+}
+#ml-trans-tbl .ml-ui-tabs.ml-ui-tabs-nop {
+	margin: 0px;
+	padding: 0px;
+}
+#ml-trans-tbl .ml-ui-tabs .ui-tabs-nav li.ui-tabs-active {
+	margin-bottom: -1px;
+	padding-bottom: 1px;	
+}
+#ml-trans-tbl tr.ml-row-checked, #ml-trans-tbl tr.ml-row-checked * {
+	background-color: lightgray;
+}
+#ml-trans-form {
+	margin-top: 5px;;
+}
+#ml-trans-form p {
+	text-align: center;
+	margin-top: 3px;
+}
+.ml-btn-panel input[type=submit] {
+	float: right;
+	margin-right: 10px;
+}
+#ml-trans-tbl tbody tr {
+	position: relative;
+}
+#ml-trans-tbl tbody tr .ui-tabs-nav {
+	display: none;
+}
+#ml-trans-tbl tbody tr:not(.ml-row-checked) td:nth-child(2):hover .ui-tabs-nav {
+	display: block;
+	position: absolute;
+	bottom: 100%;
+}
+#ml-trans-tbl thead .ml-ui-tabs {
+	text-align: center;
+}
+#ml-trans-tbl thead .ui-tabs-nav {
+	display: inline-block;
+	margin-bottom: -4px;
+}
+#ml-trans-tbl thead .ml-ui-tabs .ui-tabs-nav li.ui-tabs-active {
+	border-color: gray;
+}
+
+
+/* The medias */
+.media-modal .media-modal-content .ml-ui-tabs {
+	float: right;
+	width: 65%;
+}
+.media-modal .media-modal-content .ml-ui-tabs input,
+.media-modal .media-modal-content .ml-ui-tabs textarea {
+	width: 100% !important;
+}
+.media-modal .media-modal-content .ml-ui-tabs .ui-tabs-nav li.ui-tabs-active {
+	margin-bottom: -1px;
+	padding-bottom: 1px;
+}
+

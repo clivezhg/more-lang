@@ -1,0 +1,620 @@
+# Copyright (C) 2020 More-Lang
+# This file is distributed under the same license as the More-Lang package.
+msgid ""
+msgstr ""
+"Project-Id-Version: More-Lang 2.5.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/more-lang\n"
+"POT-Creation-Date: 2020-10-31 03:00:00+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2020-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: css/morelang_admin_css.php:177
+msgid "← (Default)"
+msgstr ""
+
+#: ext/ml_custom.php:13
+msgid "The \"Name\" should have less than %d characters"
+msgstr ""
+
+#: ext/ml_custom.php:123
+msgid "The default meta is missing"
+msgstr ""
+
+#: ext/ml_custom.php:153
+msgid "Failure"
+msgstr ""
+
+#: ext/ml_custom.php:156
+msgid "Invalid Parameters"
+msgstr ""
+
+#: ext/ml_ext.php:132
+msgid "More-Lang Translations"
+msgstr ""
+
+#: ext/ml_ext.php:132 more-lang.php:57
+msgid "Translations"
+msgstr ""
+
+#: ext/ml_lang_col.php:17
+msgid "This column is added by More-Lang to show the translation status of each Post."
+msgstr ""
+
+#: ext/ml_lang_col.php:19
+msgid "Language"
+msgstr ""
+
+#: ext/ml_translate.php:31
+msgid "More-Lang Plugin Translations"
+msgstr ""
+
+#: ext/ml_translate.php:33
+msgid "Add Single Line"
+msgstr ""
+
+#: ext/ml_translate.php:34
+msgid "Add Multi Lines"
+msgstr ""
+
+#: ext/ml_translate.php:35
+msgid "Delete Selected"
+msgstr ""
+
+#: ext/ml_translate.php:42
+msgid "Default Text"
+msgstr ""
+
+#: ext/ml_translate.php:43 inc/ml_cfg.php:47
+msgid "Translation"
+msgstr ""
+
+#: ext/ml_translate.php:65
+msgid "More-Lang provides in-place editors as far as possible. If it does not provide in certain cases"
+msgstr ""
+
+#: ext/ml_translate.php:66
+msgid " (i.e., the Name of any Custom Field, or the Name of any non-taxonomy Product attribute)"
+msgstr ""
+
+#: ext/ml_translate.php:67
+msgid ", you can translate the text here, but in most cases you need to make code change to get the localized text"
+msgstr ""
+
+#: ext/ml_translate.php:68
+msgid ", please see \"How to translate text without an in-place editor?\" in the "
+msgstr ""
+
+#: ext/ml_translate.php:73
+msgid "Error: Please config the languages first!"
+msgstr ""
+
+#: ext/ml_translate.php:74
+msgid "Error: 'Default Text' cannot be duplicate!"
+msgstr ""
+
+#: inc/ml_cfg.php:22 inc/ml_cfg.php:25
+msgid "More-Lang plugin"
+msgstr ""
+
+#: inc/ml_cfg.php:25 more-lang.php:58
+msgid "Settings"
+msgstr ""
+
+#: inc/ml_cfg.php:47
+msgid "Update"
+msgstr ""
+
+#: inc/ml_cfg.php:48
+msgid "Enable it by selecting a non-default language"
+msgstr ""
+
+#: inc/ml_cfg.php:49
+msgid "Enable it by selecting the default language"
+msgstr ""
+
+#: inc/ml_cfg.php:50
+msgid "Not switch when it is autosaving"
+msgstr ""
+
+#: inc/ml_cfg.php:51 inc/ml_option.php:64
+msgid "More..."
+msgstr ""
+
+#: inc/ml_cfg.php:87
+msgid "More features are available in "
+msgstr ""
+
+#: inc/ml_cfg.php:90
+msgid "If you like %s,"
+msgstr ""
+
+#: inc/ml_cfg.php:91
+msgid "please leave a %s rating."
+msgstr ""
+
+#: inc/ml_cfg.php:94
+msgid "Thanks a lot in advance!"
+msgstr ""
+
+#: inc/ml_editor.php:111 inc/ml_widget.php:71
+msgid "Title"
+msgstr ""
+
+#: inc/ml_editor.php:111
+msgid "Content"
+msgstr ""
+
+#: inc/ml_editor.php:111
+msgid "Excerpt"
+msgstr ""
+
+#: inc/ml_editor_block.php:46
+msgid "Succeeded"
+msgstr ""
+
+#: inc/ml_menu.php:25
+msgid "Navigation Label"
+msgstr ""
+
+#: inc/ml_menu.php:46
+msgid "Title Attribute"
+msgstr ""
+
+#: inc/ml_menu.php:88 inc/ml_switcher.php:83 inc/ml_switcher.php:163
+msgid "More-Lang Switcher"
+msgstr ""
+
+#: inc/ml_option.php:35
+msgid "ERROR"
+msgstr ""
+
+#: inc/ml_option.php:36
+msgid "Permalink should not be 'Plain'."
+msgstr ""
+
+#: inc/ml_option.php:37
+msgid "Go to the setting page"
+msgstr ""
+
+#: inc/ml_option.php:40
+msgid "More-Lang Plugin Settings"
+msgstr ""
+
+#: inc/ml_option.php:42
+msgid "Add Locale:"
+msgstr ""
+
+#: inc/ml_option.php:44
+msgid "Add"
+msgstr ""
+
+#: inc/ml_option.php:45
+msgid "or"
+msgstr ""
+
+#: inc/ml_option.php:46
+msgid "Create New"
+msgstr ""
+
+#: inc/ml_option.php:52
+msgid "Locale"
+msgstr ""
+
+#: inc/ml_option.php:53
+msgid "e.g., <em>en_GB</em>; it can also be Language Code, e.g., <em>en</em>."
+msgstr ""
+
+#: inc/ml_option.php:54
+msgid "<br>If you modify a Locale after entering any content for the language,"
+msgstr ""
+
+#: inc/ml_option.php:55
+msgid "the link from the content to the language will be broken, you need to re-enter the content."
+msgstr ""
+
+#: inc/ml_option.php:56
+msgid "Name"
+msgstr ""
+
+#: inc/ml_option.php:57
+msgid "Frontend Label"
+msgstr ""
+
+#: inc/ml_option.php:58
+msgid "Flag"
+msgstr ""
+
+#: inc/ml_option.php:59
+msgid "Date Format"
+msgstr ""
+
+#: inc/ml_option.php:60
+msgid "\"Date Format\" & \"Time Format\": the pre-defined expect that the default Wordpress format is used in your theme,"
+msgstr ""
+
+#: inc/ml_option.php:61
+msgid " and ISO format is provided for most of the countries."
+msgstr ""
+
+#: inc/ml_option.php:62
+msgid " If it is not suitable, enter your format."
+msgstr ""
+
+#: inc/ml_option.php:63
+msgid "Time Format"
+msgstr ""
+
+#: inc/ml_option.php:65
+msgid "Actions"
+msgstr ""
+
+#: inc/ml_option.php:74
+msgid "Frontend"
+msgstr ""
+
+#: inc/ml_option.php:76
+msgid "Generate language switcher"
+msgstr ""
+
+#: inc/ml_option.php:78
+msgid " at:"
+msgstr ""
+
+#: inc/ml_option.php:81
+msgid "Fixed"
+msgstr ""
+
+#: inc/ml_option.php:84
+msgid "top-right"
+msgstr ""
+
+#: inc/ml_option.php:85
+msgid "bottom-right"
+msgstr ""
+
+#: inc/ml_option.php:86
+msgid "bottom-left"
+msgstr ""
+
+#: inc/ml_option.php:87
+msgid "top-left"
+msgstr ""
+
+#: inc/ml_option.php:88
+msgid "top"
+msgstr ""
+
+#: inc/ml_option.php:89
+msgid "right"
+msgstr ""
+
+#: inc/ml_option.php:90
+msgid "bottom"
+msgstr ""
+
+#: inc/ml_option.php:91
+msgid "left"
+msgstr ""
+
+#: inc/ml_option.php:94
+msgid "CSS Selector"
+msgstr ""
+
+#: inc/ml_option.php:95
+msgid "The switcher(s) will be appended to the element(s) specified by the CSS Selector input."
+msgstr ""
+
+#: inc/ml_option.php:98
+msgid " style:"
+msgstr ""
+
+#: inc/ml_option.php:100
+msgid "Popup"
+msgstr ""
+
+#: inc/ml_option.php:101
+msgid "Horizontal"
+msgstr ""
+
+#: inc/ml_option.php:105
+msgid "Do not use the default styles for the language switchers"
+msgstr ""
+
+#: inc/ml_option.php:106
+msgid "I.e., do not import the \"morelang_front.css\", then we can customize the switcher styles more easily."
+msgstr ""
+
+#: inc/ml_option.php:108
+msgid "Redirect according to the browser's preferred languages when the front page is requested"
+msgstr ""
+
+#: inc/ml_option.php:109
+msgid "If the front page is linked (i.e., \"HTTP_REFERER\" in PHP) from the same site, the redirection will not occur."
+msgstr ""
+
+#: inc/ml_option.php:110
+msgid "URL mode:"
+msgstr ""
+
+#: inc/ml_option.php:113
+msgid "Prepend to Path"
+msgstr ""
+
+#: inc/ml_option.php:113 inc/ml_option.php:115 special/ml_special_option.php:84
+msgid "e.g."
+msgstr ""
+
+#: inc/ml_option.php:115
+msgid "Query String"
+msgstr ""
+
+#: inc/ml_option.php:117
+msgid "URL language format:"
+msgstr ""
+
+#: inc/ml_option.php:120
+msgid "Lower Case"
+msgstr ""
+
+#: inc/ml_option.php:122
+msgid "Underscore to Hyphen"
+msgstr ""
+
+#: inc/ml_option.php:124
+msgid "No Country Code"
+msgstr ""
+
+#: inc/ml_option.php:125
+msgid "e.g., from en_GB to "
+msgstr ""
+
+#: inc/ml_option.php:129
+msgid "Generate hreflang tags"
+msgstr ""
+
+#: inc/ml_option.php:130
+msgid "Some search engines use it for multilingual SEO."
+msgstr ""
+
+#: inc/ml_option.php:134
+msgid "Admin Panels"
+msgstr ""
+
+#: inc/ml_option.php:136
+msgid "Use short mode for the language labels on the admin panels"
+msgstr ""
+
+#: inc/ml_option.php:137
+msgid "If you have many languages, this can make the language switching tabs shorter."
+msgstr ""
+
+#: inc/ml_option.php:138
+msgid "i.e., the Locale instead of the Name"
+msgstr ""
+
+#: inc/ml_option.php:140
+msgid "Use pop-up language switcher on the rich editors"
+msgstr ""
+
+#: inc/ml_option.php:141
+msgid "If you have many languages, the horizontal language switching tabs might mess up the rich editors, then you can enable this to clean it."
+msgstr ""
+
+#: inc/ml_option.php:142
+msgid "i.e., pop-up menu instead of horizontal tabs"
+msgstr ""
+
+#: inc/ml_option.php:144
+msgid "Clear the More-Lang data when \"Delete\" More-Lang on the Plugins panel"
+msgstr ""
+
+#: inc/ml_option.php:145
+msgid "this is unrecoverable"
+msgstr ""
+
+#: inc/ml_option.php:147
+msgid "Do not add \"Language\" column to the Posts lists."
+msgstr ""
+
+#: inc/ml_option.php:148
+msgid "If you feel the \"Language\" column is disturbing, you can disable it here."
+msgstr ""
+
+#: inc/ml_option.php:156
+msgid "Enable compatibility with Plugins & Themes in some special cases"
+msgstr ""
+
+#: inc/ml_option.php:157
+msgid "After enabling it, a menu item \"Special\" will be added to the navigation sidebar menu."
+msgstr ""
+
+#: inc/ml_option.php:175
+msgid "↑ up"
+msgstr ""
+
+#: inc/ml_option.php:176
+msgid "Delete"
+msgstr ""
+
+#: inc/ml_option.php:177
+msgid "If you change the default language to another language after entering any content for either of the two languages,"
+msgstr ""
+
+#: inc/ml_option.php:178
+msgid " the link from the content to the language will be broken, you need to re-enter the content."
+msgstr ""
+
+#: inc/ml_option.php:179
+msgid "Select Pre-defined Locales"
+msgstr ""
+
+#: inc/ml_option.php:180
+msgid "Error: 'Locale' cannot be empty!"
+msgstr ""
+
+#: inc/ml_option.php:181
+msgid "Error: 'Locale' cannot be duplicate!"
+msgstr ""
+
+#: inc/ml_option.php:184
+msgid "more options"
+msgstr ""
+
+#: inc/ml_option.php:184
+msgid "Close"
+msgstr ""
+
+#: inc/ml_option.php:188
+msgid "Missing content placeholder:"
+msgstr ""
+
+#: inc/ml_option.php:189
+msgid "If a Post's content hasn't been translated, this will be displayed instead."
+msgstr ""
+
+#: inc/ml_option.php:193
+msgid "Is RTL language:"
+msgstr ""
+
+#: inc/ml_switcher.php:82
+msgid "More-Lang Switcher Widget"
+msgstr ""
+
+#: inc/ml_switcher.php:95
+msgid "Language Switcher"
+msgstr ""
+
+#: inc/ml_switcher.php:110
+msgid "Title:"
+msgstr ""
+
+#: inc/ml_switcher.php:152
+msgid "More-Lang"
+msgstr ""
+
+#: inc/ml_switcher.php:176
+msgid "Add to Menu"
+msgstr ""
+
+#: special/ml_special_3party.php:52
+msgid "More-Lang Compatibility in Special Cases"
+msgstr ""
+
+#: special/ml_special_3party.php:52
+msgid "Special"
+msgstr ""
+
+#: special/ml_special_option.php:45
+msgid "More-Lang Compatibility with Plugins & Themes in some Special Cases"
+msgstr ""
+
+#: special/ml_special_option.php:53
+msgid "Post metas support"
+msgstr ""
+
+#: special/ml_special_option.php:54
+msgid "Some Plugins & Themes add Post metas, which are not directly supported by More-Lang."
+msgstr ""
+
+#: special/ml_special_option.php:55
+msgid " However, More-Lang supports the built-in Custom Fields panel."
+msgstr ""
+
+#: special/ml_special_option.php:56
+msgid " If any Post meta is not shown in the Custom Fields panel, you can add it here, then,"
+msgstr ""
+
+#: special/ml_special_option.php:57
+msgid " if it exists in the Post being edited, it will be shown in the Custom Fields panel, and ready to be translated."
+msgstr ""
+
+#: special/ml_special_option.php:61
+msgid "Select or input the Post metas expected to be shown in the Custom Fields panel:"
+msgstr ""
+
+#: special/ml_special_option.php:66
+msgid "Missing More-Lang inputs"
+msgstr ""
+
+#: special/ml_special_option.php:67
+msgid "Few Plugins will remove the More-Lang inputs in some modules."
+msgstr ""
+
+#: special/ml_special_option.php:68
+msgid " By setting this section, you can enter all language versions in the default inputs of the modules affected."
+msgstr ""
+
+#: special/ml_special_option.php:70
+msgid "Modules affected:"
+msgstr ""
+
+#: special/ml_special_option.php:73
+msgid "Menus"
+msgstr ""
+
+#: special/ml_special_option.php:74
+msgid "Only \"Navigation Label\" & \"Title Attribute\" will be processed."
+msgstr ""
+
+#: special/ml_special_option.php:75
+msgid " Do not use it in other palces like embeded Widgets, etc."
+msgstr ""
+
+#: special/ml_special_option.php:77
+msgid "Widgets"
+msgstr ""
+
+#: special/ml_special_option.php:78
+msgid "Only \"Title\" will be processed."
+msgstr ""
+
+#: special/ml_special_option.php:80
+msgid "Text delimiter:"
+msgstr ""
+
+#: special/ml_special_option.php:88
+msgid "Link filters for adding language"
+msgstr ""
+
+#: special/ml_special_option.php:89
+msgid "If a link is missing language, there can be various reasons."
+msgstr ""
+
+#: special/ml_special_option.php:90
+msgid " One possible reason is that the link is not filtered by More-Lang."
+msgstr ""
+
+#: special/ml_special_option.php:91
+msgid " If you identify the link which should be filtered, you can add it here."
+msgstr ""
+
+#: special/ml_special_option.php:92
+msgid " (E.g., if you see "
+msgstr ""
+
+#: special/ml_special_option.php:96
+msgid "Input the links expected to be filtered (separated by "
+msgstr ""
+#. Plugin Name of the plugin/theme
+msgid "More-Lang"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://wordpress.org/plugins/more-lang/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "A multilingual support plugin for Wordpress"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Clive Zheng"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://www.morelang.com"
+msgstr ""

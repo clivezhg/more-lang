@@ -1,0 +1,102 @@
+div.ml-lang-switcher-wrap {
+	display: inline-block;
+	z-index: 10001;
+}
+.ml-lang-switcher-wrap.ml-T, .ml-lang-switcher-wrap.ml-TR, .ml-lang-switcher-wrap.ml-TL { top: 3px; }
+.ml-lang-switcher-wrap.ml-R, .ml-lang-switcher-wrap.ml-TR, .ml-lang-switcher-wrap.ml-BR { right: 3px;; }
+.ml-lang-switcher-wrap.ml-B, .ml-lang-switcher-wrap.ml-BR, .ml-lang-switcher-wrap.ml-BL { bottom: 3px; }
+.ml-lang-switcher-wrap.ml-L, .ml-lang-switcher-wrap.ml-TL, .ml-lang-switcher-wrap.ml-BL { left: 3px; }
+.ml-lang-switcher-wrap.ml-T { left: 50%; }
+.ml-lang-switcher-wrap.ml-R { bottom: 50%; }
+.ml-lang-switcher-wrap.ml-B { right: 50%; }
+.ml-lang-switcher-wrap.ml-L { top: 50%; }
+
+.ml-lang-switcher-wrap .ml-lang-switcher {
+	background-color: lightgray;
+	padding: 0px;
+	margin: 1px;
+	border: 1px solid dimgray;
+}
+.ml-lang-switcher-wrap .ml-lang-switcher * {
+	line-height: 100%;
+	font-size: 13px;
+}
+
+ul.ml-lang-switcher li { /* '.ml-lang-item', '.ml-lang-close' */
+	display: none;
+	height: auto;
+	padding: 0px;
+	margin: 0px;
+}
+.ml-lang-switcher .ml-lang-item * {
+	display: inline;
+	padding: 0px;
+	margin: 0px;
+	border: none;
+	vertical-align: middle;
+}
+.ml-lang-switcher .ml-lang-item.ml-active,
+.ml-lang-switcher.ml-open .ml-lang-item,
+.ml-lang-switcher:hover .ml-lang-item {
+	display: block;
+}
+
+.ml-lang-switcher .ml-lang-item a {
+	display: block;
+	padding: 1px 3px 1px 5px;
+}
+.ml-lang-switcher.ml-open .ml-lang-item a,
+.ml-lang-switcher:hover .ml-lang-item a {
+	padding: 5px;
+}
+.ml-lang-switcher .ml-lang-item:hover a { background-color: gray; }
+.ml-lang-switcher .ml-lang-item.ml-active:hover a { background-color: lightgray; }
+.ml-lang-switcher .ml-lang-item.ml-active a:after {
+	content: "▼";
+	font-size: 10px;
+	margin-left: 3px;
+	vertical-align: middle;
+	color: dimgray;
+}
+.ml-lang-switcher.ml-open .ml-lang-item.ml-active a:after,
+.ml-lang-switcher:hover .ml-lang-item.ml-active a:after {
+	display: none;
+}
+
+.ml-lang-switcher .ml-lang-item span {
+	display: none;
+	margin-left: 5px;
+	color: #007acc;
+	font-size: 13px;
+	font-family: arial, verdana, sans-serif;
+}
+.ml-lang-switcher .ml-lang-item.ml-active a span { color: darkred; }
+.ml-lang-switcher .ml-lang-item:hover span { color: white; }
+.ml-lang-switcher.ml-open .ml-lang-item span,
+.ml-lang-switcher:hover .ml-lang-item span {
+	display: inline;
+}
+
+.ml-lang-switcher.ml-open .ml-lang-close {
+	display: block;
+	border-bottom: 1px solid gray;
+	margin-bottom: 3px;
+	font-size: 13px;
+	line-height: 21px;
+	text-align: center;
+	background-color: darkgray;
+	cursor: pointer;
+}
+
+html[dir="rtl"] .ml-lang-switcher .ml-lang-item.ml-active a:after {
+	margin-right: 3px;
+	margin-left: 0px;
+}
+html[dir="rtl"] .ml-lang-switcher .ml-lang-item span {
+	margin-right: 5px;
+	margin-left: 0px;
+}
+
+.menu-item .ml-switcher-flag {
+	display: inline; /* Keep the default value of <img>, for some themes(like Twenty Twenty) will set it to "block" */
+}

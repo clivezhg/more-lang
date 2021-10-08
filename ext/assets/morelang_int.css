@@ -1,0 +1,12 @@
+/* This file handles some integration issues. */
+
+/* For the issue caused by Product Feed Pro plugin. */
+#ml-langcfg-tbl tfoot tr {
+	display: table-row !important;
+}
+.ml-ui-tabs li a {
+	color: #0073aa !important;
+}
+.ml-ui-tabs li:not(.ui-tabs-active) a:hover {
+	color: #00a0d2 !important;
+}

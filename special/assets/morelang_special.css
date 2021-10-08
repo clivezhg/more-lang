@@ -1,0 +1,38 @@
+/* The styles of compatibility with More-Lang with Plugins & Themes in some special cases */
+
+#ml-special-form {
+	margin-top: 5px;;
+}
+#ml-special-form p {
+	text-align: center;
+	margin-top: 3px;
+}
+#ml-special-form p.submit {
+	padding-bottom: 0px;
+}
+
+.ml-special-cfg #ml-langcfg-tbl tfoot td {
+	border-top-width: 0px;
+	padding-left: 6px;
+	padding-top: 9px;
+}
+.ml-special-cfg #ml-langcfg-tbl fieldset {
+	padding: 9px;
+}
+#ml-opt-wrap.ml-special-cfg fieldset:not(:first-of-type) {
+	margin-top: 19px;
+}
+div.ml-directive-label {
+	margin-bottom: 6px;
+}
+.ml-special-cfg q::before {
+	content: "“";
+	font-size: medium;
+}
+.ml-special-cfg q::after {
+	content: "”";
+	font-size: medium;
+}
+.ml-special-cfg q {
+	font-size: x-large;
+}

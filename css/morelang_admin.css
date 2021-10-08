@@ -1,0 +1,855 @@
+#ml-opt-wrap {
+	width: 96%;
+	padding: 8px;
+	position: relative;
+	background-color: #eeeeee;
+	margin-top: 6px;
+	margin-bottom: 19px;
+	border: 1px solid lightgray;
+	border-bottom-color: gray;
+	border-radius: 10px 10px 0px 0px;
+}
+#ml-opt-wrap #ml-opt-heading {
+	border-bottom: 3px double lightgray;
+}
+#ml-opt-wrap #ml-opt-heading h2 {
+	margin-top: 0.3em;
+	margin-bottom: 0.8em;
+}
+#ml-opt-wrap .ml-directive-label {
+	vertical-align: middle;
+	color: black;
+}
+#ml-opt-wrap input[type="radio"], #ml-opt-wrap input[type="checkbox"] {
+	margin-right: 0px;
+	margin-top: auto;
+}
+#ml-opt-wrap input[type="radio"]:not(:first-of-type) {
+	margin-left: 8px;
+}
+#ml-opt-wrap input.ml-grid-input {
+	max-width: 88px;
+	width: 100%;
+}
+#ml-opt-wrap fieldset {
+	position: relative;
+	border: 1px solid SteelBlue;
+	padding: 8px 3px;
+	border-radius: 5px;
+	background-color: #e8e8e8;
+	margin-top: 5px;
+}
+#ml-opt-wrap fieldset legend {
+	color: SteelBlue;
+}
+#ml-opt-wrap fieldset .ml-optrow-spacer {
+	display: inline-block;
+	height: 1.3em;
+}
+#ml-opt-wrap .ml-inner-comment {
+	color: gray;
+	vertical-align: middle;
+}
+/*#ml-opt-wrap input:checked ~ .ml-inner-comment {
+	color: dimgray;
+}*/
+#ml-opt-wrap .ml-invalid-env-opt {
+	color: #D8000C;
+	background-color: #FFBABA;
+	padding: 5px 8px;
+	border-bottom: 1px solid gray;
+	margin-bottom: 5px;
+	font-size: medium;
+	border-radius: 0.5em;
+}
+#ml-opt-wrap .ml-invalid-env-opt::before {
+	content: attr(data-level)": ";
+	color: red;
+	display: inline;
+	font-size: large;
+}
+
+/* See "wp-admin/css/forms.css" */
+body.ml-rtl-lang input:not(#custom-menu-item-url):not(.edit-menu-item-url):not([type="email"]):not([type="url"]),
+body.ml-rtl-lang textarea {
+	direction: rtl;
+}
+body .ml-dir-ltr {
+	direction: ltr !important;
+}
+body .ml-dir-rtl {
+	direction: rtl !important;
+}
+
+#ml-langcfg-tbl {
+	border: 1px solid RoyalBlue;
+	padding: 3px;
+	border-spacing: 0px;
+	border-radius: 0px 0px 5px 5px;
+	width: 100%;
+}
+
+#ml-langcfg-tbl tr td, #ml-langcfg-tbl tr th {
+	text-align: left;
+}
+#ml-langcfg-tbl tr th {
+	padding-left: 5px;
+}
+#ml-langcfg-tbl tbody tr td:last-child, #ml-langcfg-tbl tr th:last-child {
+	text-align: center;
+	padding: 3px;
+	white-space: nowrap;
+}
+#ml-langcfg-tbl tbody tr:not(:first-child):hover {
+	background-color: lightgray;
+}
+
+#ml-langcfg-tbl tbody tr:first-child td {
+	border-style: solid;
+	border-color: blue;
+	border-width: 1px 0px;
+}
+#ml-langcfg-tbl tbody tr:first-child td:first-child {
+	border-left-width: 1px;
+}
+#ml-langcfg-tbl tbody tr:first-child td:last-child {
+	border-right-width: 1px;
+	text-align: left;
+}
+
+#ml-langcfg-tbl tbody tr td button {
+	cursor: pointer;
+	color: #333;
+	background-color: #E6E6E6;
+	border: 1px solid dimgray;
+	border-radius: 0.3em;
+}
+#ml-langcfg-tbl tbody tr td button:hover {
+	color: #fff;
+	background-color: #8c8c8c;
+	border-color: #545b62;
+}
+#ml-langcfg-tbl tbody tr:first-child button {
+	display: none;
+}
+#ml-langcfg-tbl tbody tr .ml-del-lang {
+	margin-left: 5px;
+}
+
+#ml-langcfg-tbl tfoot td {
+	text-align: left;
+	border-top: 1px solid gray;
+}
+#ml-langcfg-tbl thead th:last-child {
+	color: Indigo;
+}
+#ml-langcfg-tbl tbody td:last-child {
+	background-color: lightgray;
+}
+
+#ml-langcfg-tbl .ml-moreopt-wrap {
+	position: relative;
+}
+#ml-langcfg-tbl .ml-moreopt-wrap .ml-moreopt-spacer {
+	display: none;
+	position: absolute;
+	top: -3px;
+	right: 90%;
+	padding-right: 18%;
+}
+#ml-langcfg-tbl .ml-moreopt-wrap .ml-moreopt-grp {
+	position: relative;
+	padding: 8px;
+	white-space: nowrap;
+	background-color: #d8d8d8;
+	border: 2px solid gray;
+	z-index: 101;
+}
+#ml-langcfg-tbl .ml-moreopt-wrap .ml-moreopt-grp:before {
+	content: "";
+	display: block;
+	position: absolute;
+	right: -21px;
+	top: 3px;
+	width: 0px;
+	height: 0px;
+	border-width: 8px 10px;
+	border-style: solid;
+	border-color: transparent transparent transparent gray;
+}
+#ml-langcfg-tbl .ml-moreopt-wrap .ml-moreopt-grp:after {
+	content: "";
+	display: block;
+	position: absolute;
+	right: -16px;
+	top: 5px;
+	width: 0px;
+	height: 0px;
+	border-width: 6px 8px;
+	border-style: solid;
+	border-color: transparent transparent transparent #d8d8d8;
+}
+#ml-langcfg-tbl .ml-moreopt-wrap .ml-moreopt-title {
+	display: inline-block;
+	width: 15.1em;
+}
+#ml-langcfg-tbl .ml-moreopt-wrap .ml-moreopt-content {
+	display: inline-block;
+}
+#ml-langcfg-tbl .ml-moreopt-wrap textarea {
+	vertical-align: middle;
+}
+#ml-langcfg-tbl .ml-moreopt-wrap .ml-moreopt-ind {
+	color: darkblue;
+	border-bottom: 1px dotted blue;
+	cursor: pointer;
+}
+#ml-langcfg-tbl .ml-moreopt-wrap:hover .ml-moreopt-ind {
+	color: red;
+}
+#ml-langcfg-tbl .ml-moreopt-wrap .ml-moreopt-ind span:last-child {
+	display: none;
+}
+#ml-langcfg-tbl .ml-moreopt-wrap.ml-moreopt-show .ml-moreopt-ind span:last-child {
+	display: inline;
+}
+#ml-langcfg-tbl .ml-moreopt-wrap.ml-moreopt-show .ml-moreopt-ind span:first-child {
+	display: none;
+}
+#ml-langcfg-tbl .ml-moreopt-wrap:hover .ml-moreopt-spacer,
+#ml-langcfg-tbl .ml-moreopt-wrap.ml-moreopt-show .ml-moreopt-spacer {
+	display: block;
+	color: black;
+}
+#ml-langcfg-tbl .ml-moreopt-wrap .ml-moreopt-topbar {
+	background-color: gray;
+}
+
+#ml-pos-style-grp .ml-radio-grp {
+	margin-left: 1px;
+}
+#ml-pos-style-grp span {
+	vertical-align: middle;
+}
+#ml-pos-style-grp select {
+	padding-left: 0px;
+	padding-right: 19px;
+	font-size: 1em;
+}
+#ml-pos-style-grp #ml-pos-text {
+	padding: 0px 3px;
+}
+#ml-pos-style-grp #ml-pos-sel {
+	width: 100px;
+}
+
+#ml-url-locale-result-example {
+	padding-left: 1.8em;
+}
+#ml-url-locale-result {
+	color: darkred;
+}
+#ml-url-locale-lower-case:checked ~ #ml-url-locale-result-example #ml-url-locale-result {
+	text-transform: lowercase;
+}
+#ml-url-locale-to-hyphen ~ #ml-url-locale-result-example #ml-url-locale-result .ml-country-part .ml-underscore,
+#ml-url-locale-to-hyphen:checked ~ #ml-url-locale-result-example #ml-url-locale-result .ml-country-part .ml-hyphen {
+	display: inline;
+}
+#ml-url-locale-to-hyphen:checked ~ #ml-url-locale-result-example #ml-url-locale-result .ml-country-part .ml-underscore,
+#ml-url-locale-to-hyphen ~ #ml-url-locale-result-example #ml-url-locale-result .ml-country-part .ml-hyphen {
+	display: none;
+}
+#ml-url-locale-no-country:checked ~ #ml-url-locale-result-example #ml-url-locale-result .ml-country-part {
+	display: none;
+}
+
+.ml-radio-grp {
+	display: inline-block;
+	padding: 1px;
+	margin-left: 6px;
+	border: 1px dotted gray;
+	border-radius: 3px;
+}
+#ml-langcfg-tbl input[type="checkbox"]:checked + label,
+.ml-radio-grp input:checked + label {
+	color: darkred;
+}
+.ml-opt-gap {
+	margin-top: 9px;
+	margin-bottom: 9px;
+}
+.ml-opt-gap-top {
+	margin-top: 3px;
+	display: block;
+}
+
+#ml-pos-style-grp {
+	display: none;
+}
+#ml-auto-chooser:checked ~ #ml-pos-style-grp {
+	display: inline;
+}
+.ml-auto-chooser-hight-fix {
+	display: inline-block;
+	min-height: 36px;
+	vertical-align: middle;
+}
+
+/* Adjust the gaps */
+#ml-no-css, #ml-no-css + label {
+	position: relative;
+	top:-3px;
+}
+#ml-no-css + label + span.ml-tooltip {
+	position: relative;
+	top:-2px;
+}
+
+.ml-btn-panel {
+	margin: 5px 0px 8px 0px;
+	text-align: center;
+}
+.ml-btn-panel > div {
+	display: inline-block;
+	padding: 3px;
+	text-align: left;
+	background-color: #AFD8FF;
+	border-radius: 5px;
+	border: 1px solid gray;
+}
+#ml-add-locale, #ml-create-locale {
+	vertical-align: middle;
+}
+#ml-locale-sel {
+	width: 18%;
+	min-width: 236px;
+	height: 18px;
+}
+#ml-locale-sel option div {
+	/* If we make 'option' or 'select' positioned instead, the 'img' position doesn't work as expected */
+	position: relative;
+	width: 100%;
+}
+#ml-locale-sel option img {
+	position: absolute;
+	right: 5px;
+}
+#ml-langcfg-form {
+	margin-top: 5px;;
+}
+#ml-langcfg-form p {
+	text-align: center;
+	margin-top: 3px;
+}
+#ml-langcfg-form p.submit, #ml-trans-form p.submit {
+	padding-bottom: 1px;
+}
+
+.ml-editor-tabs .ml-switch-editor {
+	color: #0073aa;
+}
+.ml-switch-editor.ml-active-lang {
+	background: #f5f5f5;
+	border: 1px solid #C0C0C0;
+	border-bottom-color: #f5f5f5;
+	cursor: text;
+}
+
+.ml-editor-tabs {
+	margin-right: 61px;
+	float: right;
+}
+
+/* to fix the older WPs issue. */
+#wp-content-editor-tools #wp-content-media-buttons {
+	float: left;
+}
+
+.ml-excerpt-label {
+	color: darkred;
+	font-size: 0.9em;
+}
+
+
+.ml-title-prompt-text {
+	color: #72777c;
+	position: absolute;
+	font-size: 1.7em;
+	padding: 11px 10px;
+}
+.ml-title-input {
+	padding: 3px 8px;
+	font-size: 1.7em;
+	line-height: 100%;
+	height: 1.7em;
+	width: 100%;
+	outline: none;
+	margin: 0 0 3px;
+	background-color: #fff;
+}
+#title-tabs .ui-tabs-nav a:focus {
+	box-shadow: none;
+}
+
+.ml-ui-tabs {
+	position: relative; /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+	padding: .1em;
+	border: 1px solid lightgray;
+	border-top-width: 0px;
+}
+
+.ml-ui-tabs.ml-custom-html.ml-ui-tabs-nop { /*for the Custom HTML widget*/
+	border-width: 0px;
+	margin-bottom: -1px;
+}
+
+/* The following are copied from '.ui-helper-clearfix' in jquery-ui-dialog.css, which may not be enqueued */
+.ml-ui-tabs .ui-tabs-nav:before,
+.ml-ui-tabs .ui-tabs-nav:after {
+	content: "";
+	display: table;
+	border-collapse: collapse;
+}
+.ml-ui-tabs .ui-tabs-nav:after {
+	clear: both;
+}
+
+.ml-ui-tabs .ui-tabs-nav .ui-state-default:not(.ui-tabs-active) {
+	/* To avoid the overlay of background on input outline (which may occur in the WC Product without this section).
+	   Note that 'background-position' doesn't affect 'background-color' */
+	background-color: transparent;
+	/* Though multi-images can be set for a 'background-image', only those in highest-specificity-selector will take effect */
+	background-image: linear-gradient(to right, #e6e6e6, #e6e6e6);
+	background-position: 0px -1px;
+	background-repeat: no-repeat;
+}
+
+.ml-ui-tabs .ui-tabs-nav {
+	margin: 0;
+	padding: 0em 0.8em;
+}
+.ml-ui-tabs .ui-tabs-nav li {
+	list-style: none;
+	float: left;
+	position: relative;
+	top: 1px;
+	margin: 1px .2em 0 0;
+	border: 1px solid lightgray;
+	border-bottom-width: 0;
+	padding: 0;
+	white-space: nowrap;
+}
+.ml-ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+	float: left;
+	padding: 3px 0.6em;
+	text-decoration: none;
+}
+.ml-ui-tabs .ui-tabs-nav li.ui-tabs-active {
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	background-color: white;
+	border-color: rgba(30, 140, 190, 0.8);
+}
+form[action="options.php"] .ml-ui-tabs .ui-tabs-nav li.ui-tabs-active,
+.term-name-wrap .ml-ui-tabs .ui-tabs-nav li.ui-tabs-active,
+.term-description-wrap .ml-ui-tabs .ui-tabs-nav li.ui-tabs-active,
+form#edittag .ml-ui-tabs .ui-tabs-nav li.ui-tabs-active {
+	margin-bottom: -1px;
+	padding-bottom: 1px;
+}
+.ml-ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor,
+.ml-ui-tabs .ui-tabs-nav li.ui-state-disabled .ui-tabs-anchor,
+.ml-ui-tabs .ui-tabs-nav li.ui-tabs-loading .ui-tabs-anchor {
+	cursor: text;
+}
+.ml-tab-empty:after {
+	content: "";
+	position: absolute;
+	width: 33%;
+	height: 1px;
+	left: 33%;
+	bottom: 0px;
+	background-color: darkred;
+}
+.ml-ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor {
+	cursor: pointer;
+}
+.ml-ui-tabs .ui-tabs-panel {
+	display: block;
+	border-width: 0;
+	padding: 0em 0.5em;
+	background: none;
+}
+.ml-ui-tabs .ui-widget-header {
+	background: none;
+	border: none;
+}
+
+.ml-ui-tabs.ml-ui-tabs-nop {
+	margin: 2px 1px 3px 1px;
+}
+.ml-ui-tabs.ml-ui-tabs-nop .ui-tabs-nav {
+	margin: 0;
+	padding: 0em 0.8em;
+}
+.ml-ui-tabs.ml-ui-tabs-nop .ui-tabs-nav .ui-tabs-anchor {
+	padding: 0.08em 0.18em;
+	font-size: 0.9em;
+}
+.term-name-wrap .ml-ui-tabs {
+	width: 95%;
+}
+.term-name-wrap .ml-ui-tabs input {
+	width: 100%;
+}
+.term-description-wrap .ml-ui-tabs {
+	width: 95%;
+}
+.term-description-wrap .ml-ui-tabs textarea {
+	width: 100%;
+}
+form[action="edit-tags.php"] .term-description-wrap textarea {
+	height: 5em;
+}
+form[action="options.php"] .ml-ui-tabs {
+	width: 26em;
+}
+
+#excerpt-tabs.ml-ui-tabs {
+	border-width: 0px;
+}
+#excerpt-tabs .ui-tabs-nav a:focus {
+	box-shadow: none;
+}
+#excerpt-tabs textarea {
+	margin-top: 0px;
+}
+
+#adminmenu #toplevel_page_morelang-inc-ml_cfg .wp-menu-image:before {
+	color: CadetBlue;
+}
+
+#menu-management .menu-item-ml-switcher-obj .field-description {
+	display: none;
+}
+#menu-management .menu-item-ml-switcher-obj dl.menu-item-bar dt.menu-item-handle .item-title {
+	min-height: 1.5em; /* e.g., in WP 3.8, the bar will shrink if the item-title is empty */
+}
+
+
+.ml-tooltip {
+	position: relative;
+	display: inline-block;
+	margin-left: 3px;
+	height: 16px;
+	line-height: 16px;
+	vertical-align: middle;
+}
+.ml-tooltip-mark {
+	display: block;
+	border: 1px solid #999;
+	color: darkblue;
+	border-radius: 50%;
+	font-size: 13px;
+	width: 13px;
+	height: 13px;
+	font-weight: normal;
+	font-family: "caption", Arial;
+	text-align: center;
+}
+.ml-tooltip-content-wrap {
+	z-index: 999999;
+	display: none;
+	position: absolute;
+	left: -6px;
+	bottom: 13px;
+	height: 16px;
+}
+.ml-tooltip-content {
+	position: absolute;
+	bottom: 13px;
+	left: 0px;
+	display: block;
+	width: 200px;
+	padding: 8px;
+	font-weight: normal;
+	line-height: 1.1em;
+	border: 1px solid #ccc;
+	background: #fff;
+	color: #333;
+	font-size: 13px;
+	white-space: normal!important;
+}
+.ml-tooltip-content:before {
+	content: "";
+	position: absolute;
+	left: 7px;
+	bottom: -22px;
+	border-style: solid solid solid solid;
+	border-color: #ccc transparent transparent transparent;
+	border-width: 11px 6px;
+}
+.ml-tooltip-content:after {
+	content: "";
+	position: absolute;
+	left: 8px;
+	bottom: -18px;
+	border-style: solid solid solid solid;
+	border-color: #fff transparent transparent transparent;
+	border-width: 9px 5px;
+}
+.ml-tooltip-content em {
+	font-style: normal;
+	color: darkred;
+}
+.ml-tooltip:hover > .ml-tooltip-content-wrap {
+	display: block;
+}
+.ml-tooltip-rl .ml-tooltip-content-wrap .ml-tooltip-content {
+	left: auto;
+	right: -26px;
+}
+.ml-tooltip-rl .ml-tooltip-content-wrap .ml-tooltip-content:before {
+	left: auto;
+	right: 6px;
+}
+.ml-tooltip-rl .ml-tooltip-content-wrap .ml-tooltip-content:after {
+	left: auto;
+	right: 7px;
+}
+.ml-tooltip-wider .ml-tooltip-content {
+	width: 300px;
+}
+
+
+#select2-ml-locale-sel-results li span img {
+	float: right;
+}
+#select2-ml-locale-sel-results.select2-results__options {
+	max-height: 318px;
+}
+#select2-ml-locale-sel-results .select2-results__option {
+	padding: 3px 6px;
+	margin-bottom: 1px;
+}
+#select2-ml-locale-sel-container {
+	width: 80%;
+	min-width: 196px;
+}
+.select2-container .select2-selection--single #select2-ml-locale-sel-container.select2-selection__rendered {
+	white-space: normal; /* Override Select2 to avoid the float issue */
+}
+#select2-ml-locale-sel-container img {
+	float: right;
+	margin-top: 8px;
+}
+.ml-flag-container {
+	width: 7.6em !important;
+}
+.ml-flag-container img, .ml-flag-dropdown img {
+	max-width: 18px;
+	max-height: 13px;
+}
+.select2-results .ml-more-locale {
+	padding: 5px;
+	text-align: center;
+	border-top: 1px dotted gray;
+}
+
+
+/* Style the language switchers of rich editors, including the WP_Widget_Text introduced in WP4.8+ */
+.wp-editor-tabs .ml-editor-switcher {
+	float: left;
+}
+.wp-editor-tabs .ml-switcher-popup {
+	position: relative;
+	height: 34px; /* Should be the same height as the '.wp-switch-editor'. */
+	width: 0px;
+	margin-right: 1.8em;
+}
+.ml-switcher-popup .ml-editor-tabs:before {
+	content: "⯅";
+	position: absolute;
+	right: 3px;
+	top: 0.5em;
+	color: gray;
+	font-size: 0.9em;
+	z-index: 1002;
+}
+.ml-switcher-popup:hover .ml-editor-tabs:before {
+	content: none;
+}
+.ml-switcher-popup .ml-editor-tabs {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	margin-right: 0px;
+	z-index: 1001;
+}
+.ml-switcher-popup:hover .ml-editor-tabs {
+	border: 1px solid #C0C0C0;
+	border-bottom-width: 0px;
+	bottom: -1px;
+	max-height: 18em;
+	/* The '1px' padding-bottom is required here, otherwise the vertical scroll-bar will always be displayed */
+	padding: 0px 0px 1px 0px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+.ml-switcher-popup .ml-editor-tabs .ml-switch-editor {
+	display: none;
+	white-space: nowrap;
+	float: none;
+}
+.ml-switcher-popup .ml-editor-tabs .ml-switch-editor.ml-active-lang {
+	display: block;
+	position: relative;
+}
+.ml-switcher-popup .ml-editor-tabs:hover .ml-switch-editor {
+	display: block;
+	border: none;
+}
+.ml-switcher-popup .ml-switch-editor {
+	margin-top: 0px;
+	margin-left: 0px;
+	padding-right: 1.16em;
+}
+.ml-switcher-popup .ml-switch-editor:not(.ml-active-lang):hover {
+	background-color: lightgray;
+}
+
+
+.ml-err-msg {
+	font-size: 1.3em;
+	color: darkred;
+	text-align: center;
+	padding: 5px;
+}
+
+
+/* Style the More-Lang components in the Gutenberg editor */
+.block-editor .ml-editor-panel {
+	position: relative;
+	padding-top: 3px;
+	padding-right: 3px;
+	height: auto;
+	text-align: center;
+	flex-grow: 1;
+	align-self: flex-end;
+	margin-bottom: -1px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.block-editor .ml-editor-panel:hover {
+	overflow: visible;
+}
+.block-editor .ml-editor-tabs {
+	position: relative;
+	margin-right: 7px;
+}
+.block-editor .ml-editor-tabs a {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	height: 26px;
+}
+.block-editor .ml-editor-switcher {
+	position: relative;
+	display: inline-block;
+	vertical-align: bottom;
+}
+.block-editor .ml-editor-panel .ml-upd-container {
+	position: relative;
+	left: 1px;
+	bottom: 3px;
+}
+.block-editor .ml-editor-panel #ml-upd-translation {
+	display: inline-block;
+	height: auto;
+	line-height: normal;
+	padding: 1px 3px;
+	border-radius: 5px;
+}
+.block-editor .ml-editor-panel #ml-upd-translation span {
+	display: block;
+	font-size: smaller;
+}
+.block-editor .ml-switcher-popup .ml-editor-tabs {
+	position: absolute;
+}
+.block-editor .ml-switcher-popup:hover .ml-editor-tabs {
+	border: 1px solid #C0C0C0;
+	top: -26px;
+	bottom: auto;
+	height: auto;
+}
+.block-editor .ml-switcher-popup .ml-editor-tabs:before {
+	content: "⯆";
+}
+.block-editor .ml-switcher-popup:hover .ml-editor-tabs:before {
+	content: none;
+}
+.block-editor .ml-switch-editor.ml-active-lang {
+	color: black;
+	opacity: 0.9;
+}
+/* The RTL support for the Gutenberg editor */
+.block-editor.ml-gutenberg-dir-rtl .editor-block-list__layout,
+.block-editor.ml-gutenberg-dir-rtl input, .block-editor.ml-gutenberg-dir-rtl textarea {
+	direction: rtl;
+}
+.block-editor:not(.ml-gutenberg-dir-rtl) .editor-block-list__layout,
+.block-editor:not(.ml-gutenberg-dir-rtl) input,
+.block-editor:not(.ml-gutenberg-dir-rtl) textarea {
+	direction: initial;
+}
+/* The custom fields support for the Gutenberg editor */
+.block-editor #postcustom .ml-ui-tabs {
+	display: none;
+	border-width: 0px;
+	padding: 0px;
+	margin: 0px;
+}
+.ml-not-default .block-editor #postcustom .ml-ui-tabs {
+	display: block;
+}
+.block-editor #postcustom .ml-ui-tabs .ui-tabs-nav {
+	display: none;
+}
+.block-editor #postcustom .ml-ui-tabs .ui-tabs-panel {
+	padding: 0px;
+}
+.block-editor #postcustom .ml-ui-tabs textarea {
+	margin: 8px;
+	width: 96%;
+}
+.ml-not-default .block-editor #postcustom textarea:not(.morelang-meta-locale) {
+	display: none;
+}
+/* Make some Wordpress native elements better with More-Lang */
+.block-editor .ml-editor-panel ~ div .components-button.editor-post-switch-to-draft {
+	white-space: nowrap;
+}
+
+
+.ml-switch-modules {
+	margin-top: 6px;
+	padding: 5px 18px;
+	color: #333300;
+}
+
+
+/* More-Lang Pro link */
+.ml-pro-link {
+	display: block;
+	position: absolute;
+	left: 3%;
+	right: 3%;
+	bottom: 39px;
+	padding: 3px;
+	text-align: center;
+	color: #303F30;
+	background-color: lightgray;
+	border-radius: 9px;
+	box-shadow: 1px 2px #A8A8A8;
+}

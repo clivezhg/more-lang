@@ -1,0 +1,72 @@
+div.ml-lang-switcher-wrap.ml-hide-ele {
+	display: none;
+}
+div.ml-lang-switcher-wrap {
+	display: inline-block;
+	z-index: 10001;
+}
+.ml-lang-switcher-wrap.ml-T, .ml-lang-switcher-wrap.ml-TR, .ml-lang-switcher-wrap.ml-TL { top: 3px; }
+.ml-lang-switcher-wrap.ml-R, .ml-lang-switcher-wrap.ml-TR, .ml-lang-switcher-wrap.ml-BR { right: 3px;; }
+.ml-lang-switcher-wrap.ml-B, .ml-lang-switcher-wrap.ml-BR, .ml-lang-switcher-wrap.ml-BL { bottom: 3px; }
+.ml-lang-switcher-wrap.ml-L, .ml-lang-switcher-wrap.ml-TL, .ml-lang-switcher-wrap.ml-BL { left: 3px; }
+.ml-lang-switcher-wrap.ml-T { left: 50%; }
+.ml-lang-switcher-wrap.ml-R { bottom: 50%; }
+.ml-lang-switcher-wrap.ml-B { right: 50%; }
+.ml-lang-switcher-wrap.ml-L { top: 50%; }
+
+html[dir="rtl"] .ml-lang-switcher .ml-lang-item.ml-active a:after {
+	margin-right: 3px;
+	margin-left: 0px;
+}
+html[dir="rtl"] .ml-lang-switcher .ml-lang-item span {
+	margin-right: 5px;
+	margin-left: 0px;
+}
+
+.ml-lang-switcher-wrap .ml-lang-switcher {
+	margin: 0px;
+	padding: 0px;
+}
+.ml-lang-switcher .ml-lang-close {
+	display: none !important;
+}
+.ml-lang-switcher .ml-lang-item {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 3px 5px;
+	font-size: 13px;
+}
+.ml-lang-switcher .ml-lang-item.ml-active a {
+	text-decoration: none;
+	color: gray;
+}
+.ml-lang-switcher .ml-lang-item span {
+	vertical-align: middle;
+}
+.ml-lang-switcher .ml-lang-item img {
+	display: inline;
+	vertical-align: middle;
+	margin-right: 3px
+}
+
+@media (max-width: 767px) {
+	.ml-lang-switcher .ml-lang-item {
+		font-size: 11px;
+	}
+}
+@media (max-width: 499px) {
+	.ml-lang-switcher .ml-lang-item {
+		font-size: 9px;
+	}
+	.ml-lang-switcher-wrap {
+		right: 80px;
+	}
+	.ml-lang-switcher .ml-lang-item img {
+		display: block;
+	}
+}
+
+
+.menu-item .ml-switcher-flag {
+	display: inline; /* Keep the default value of <img>, for some themes(like Twenty Twenty) will set it to "block" */
+}
