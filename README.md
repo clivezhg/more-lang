@@ -37,7 +37,10 @@ Usage
 <img src="https://user-images.githubusercontent.com/22025586/137051749-3422773a-e6c5-4ca2-bea0-d4bb0833b146.png">
 6. Multilingual menu items editor. More-Lang provides a language switcher menu item.
 <img src="https://user-images.githubusercontent.com/22025586/137051751-17eb4fd9-9ff4-48e3-b46c-f44378215859.png">
-7. Multilingual widgets editor (see Known Issues for Wordpress 5.8+). More-Lang provides a language switcher widget. Note: for a newly added widget, the More-Lang editors will not get activated; only after the widget is saved, the More-Lang editors get activated.
+7. Multilingual widgets editor. More-Lang provides a language switcher widget. Note: for a newly added widget, the More-Lang editors will not get activated; only after the widget is saved, the More-Lang editors get activated.
+Since Wordpress 5.8, the block widget editor was introduced, which is not directly supported by More-Lang currently. You can choose one of the following solutions:
+  1. Get More-Lang Pro, open the "Translate Options" screen, add "widget_block" to the expected list.
+  2. Use the https://wordpress.org/plugins/classic-widgets/ plugin to resore the previous WordPress widgets settings screens.
 <img src="https://user-images.githubusercontent.com/22025586/137051755-b02d3b84-6ba7-4bfb-8fc9-70b950ac45bb.png">
 8. Autosave & revision management. More-Lang provides excellent support for autosave & revision.
 <img src="https://user-images.githubusercontent.com/22025586/137051757-6784d76b-f0f4-4428-b3cf-1d985cf8cef8.png">
