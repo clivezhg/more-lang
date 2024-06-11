@@ -1,3 +1,5 @@
+This project is not projected to upgrade.
+
 More-Lang
 =======
 
