@@ -1,4 +1,5 @@
-This project is not projected to upgrade.
+<h1>This project is not maintained by the author.</h1>
+<h1>_______________________________________________</h1>
 
 More-Lang
 =======
